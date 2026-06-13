@@ -1,56 +1,73 @@
-# URBAN ROUTES
+# URBAN ROUTES AUTOMATION TESTING
 
-*Descripción*
+*Description*
 =
 
-Este proyecto es para pruebas automatizadas de Urban Routes, con esto
-se espera ver el resultado final de pedir un taxi dentro de la aplicación
+This project contains automated end-to-end UI 
+tests for the Urban Routes web application. The 
+objective is to validate the complete taxi booking
+process, ensuring that users can successfully request 
+a ride through different booking scenarios and
+configurations according to the specified requirements.
 
-## Archivos Principales:
-- `data.py` - Los informacion valida y necesaria
-para realizar las pruebas segun los requisitos
-- `main.py` - Son todas las pruebas
-que se realizaron desde el inicio hasta el final
-para pedir un taxi con algunas variantes que 
-estan en los requisitos
+The automated tests verify critical user flows,
+input validations, fare selection, ride options, and 
+overall application behavior from the initial booking 
+steps to the final ride confirmation.
 
-## Tecnologías y técnicas utilizadas:
-### Lenguajes de programación:
+## Main Files
+- `data.py` - Contains all test data, input values,
+expected results, and configurations required to
+execute the automated test scenarios.
+
+
+- `main.py` - Contains the automated Selenium test 
+cases that validate the complete taxi booking 
+workflow, including different ride request variations 
+based on business requirements.
+
+## Technologies and Testing Techniques Used
+### Programming Language
 
 - Python:  
-Lenguaje principal para escribir las
-pruebas automatizadas
+Primary language used to develop automated UI tests.
 
-### Frameworks y herramientas de automatización:
+### Automation Frameworks and Tools
 
 - Selenium WebDriver:  
-Para automatizar la interacción con
-el navegador web
-
-+ WebDriverWait:  
-Para implementar esperas explíci
-tas y manejar elementos dinámicos
-
-### Técnicas de testing:
-
-- Automatización de pruebas de UI:  
-Pruebas de interfaz de 
-usuario automatizadas  
+Used to automate browser interactions
+and simulate real user behavior.
 
 
-- Pruebas funcionales
-Verificación del flujo 
-completo de reserva de taxi
+- WebDriverWait:  
+Used to implement explicit waits 
+and handle dynamic web elements efficiently.
+
+### Testing Approaches
+
+- UI Automation Testing:  
+Automated validation of user 
+interface components and interactions.
 
 
-- Pruebas de regresión:  
-Asegurar que las funcionalidades
-existentes sigan funcionando
+- End-to-End Testing (E2E):  
+Verification of the complete taxi 
+booking process from start to finish.
 
 
-### Estrategias de localización:
+- Functional Testing:  
+Validation of business requirements
+and application functionality.
 
-- Múltiples tipos de localizadores:
+
+- Regression Testing:  
+Ensures existing features continue
+working correctly after changes or updates.
+
+### Locator Strategies
+
+- The project uses multiple locator techniques
+to ensure reliable element identification::
   - ID
   + Class Name
   * XPath
@@ -58,20 +75,75 @@ existentes sigan funcionando
   + Name
   + Tag Name
 
-### Técnicas de interacción:
+### Interaction Techniques
 
-+ Interacción con elementos de entrada
-  + Completar campos de texto
-- Interacción con botones
-  - Clicks y navegación
-+ Manejo de modales
-  + Interacción con ventanas emergentes
+- Form Interactions:
+  - Completing text fields
+  - Entering user information
+  - Validating input fields
 
-### Prácticas implementadas:
 
-+ Funciones de espera
-  + Uso correcto de WebDriverWait para elementos dinámicos
-+ Nomenclatura descriptiva
-  + Variables y funciones con nombres claros
-+ Código bien estructurado
-  + Organización clara y legible del código
+- Button Interactions:
+  - Click actions
+  - Navigation through application workflows
+
+
+- Modal Handling:   
+  - Interaction with pop-up windows and modal dialogs
+
+
+- Dynamic Element Management:  
+  - Explicit waits for asynchronously loaded elements
+
+### Test Coverage
+
+The automated tests validate:
+  - Complete taxi booking workflow
+  - User input validation
+  - Ride selection and configuration
+  - UI behavior and navigation
+  - Dynamic element handling
+  - End-to-end booking scenarios
+  - Error handling and validation messages
+
+### Best Practices Implemented
+- Explicit Wait Strategy:  
+Proper use of WebDriverWait to
+improve test stability and reliability.
+
+
+- Descriptive Naming Conventions:
+Clear and meaningful names for variables, 
+functions, and test cases.
+
+
+- Maintainable Test Structure:
+Well-organized code structure for easier 
+maintenance and scalability.
+
+
+- Reusable Test Data:  
+Centralized test data management
+to simplify updates and reduce duplication.
+
+
+- Readable and Scalable Code:  
+Project architecture designed to support future
+test expansion and long-term maintenance.
+````
+Project Objective
+
+The goal of this project is to demonstrate practical
+experience in UI test automation using Selenium WebDriver and Python by validating critical business flows within a taxi booking application.
+
+This project showcases skills in:
+- Test Automation
+- Selenium WebDriver
+- Python
+- UI Testing
+- End-to-End Testing
+- Functional Testing
+- Regression Testing
+- Test Design
+- Software Quality Assurance
+````
